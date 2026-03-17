@@ -227,6 +227,7 @@ h1 {
   background: #faf8f5;
 }
 .td-cell {
+  max-width: 200px;
   padding: 8px 10px;
   min-width: 120px;
   cursor: pointer;
