@@ -596,3 +596,120 @@ input:focus {
   border-left: 4px solid #007bff;
   font-weight: 500;
 }
+
+/* ===== GOALS SECTION ===== */
+.goals-section {
+  margin: 14px 0 4px;
+  padding: 14px 16px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+}
+
+.goals-title {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-secondary, #8b99b5);
+  margin: 0 0 10px;
+}
+
+.goals-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.goal-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.goal-number {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--accent, #4f8ef7);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.goal-input {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 8px;
+  padding: 7px 12px;
+  font-size: 14px;
+  color: inherit;
+  outline: none;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.goal-input:focus {
+  border-color: var(--accent, #4f8ef7);
+  background: rgba(79, 142, 247, 0.08);
+}
+
+.goal-input::placeholder {
+  color: var(--text-secondary, #8b99b5);
+  font-style: italic;
+}
+
+.goal-saved {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(72, 199, 142, 0.1);
+  border: 1px solid rgba(72, 199, 142, 0.25);
+  border-radius: 8px;
+  padding: 7px 12px;
+  min-height: 36px;
+}
+
+.goal-check {
+  flex-shrink: 0;
+  color: #48c78e;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.goal-text {
+  flex: 1;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.4;
+  word-break: break-word;
+}
+
+.goal-empty {
+  color: var(--text-secondary, #8b99b5);
+  font-style: italic;
+  font-size: 13px;
+}
+
+.btn-edit-small {
+  flex-shrink: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 2px 4px;
+  border-radius: 4px;
+  opacity: 0.6;
+  transition: opacity 0.15s, background 0.15s;
+  line-height: 1;
+}
+
+.btn-edit-small:hover {
+  opacity: 1;
+  background: rgba(255, 255, 255, 0.1);
+}
